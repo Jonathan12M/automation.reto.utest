@@ -4,9 +4,13 @@ import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import model.UtestData;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
+import tasks.JoinToday;
 import tasks.OpenUp;
+
+import java.util.List;
 
 public class UtestStepDefinition {
 
@@ -23,9 +27,11 @@ public class UtestStepDefinition {
 
 
     @When("^is registered correctly$")
-    public void isRegisteredCorrectly() {
+    public void isRegisteredCorrectly(List<UtestData> data) {
         // Write code here that turns the phrase above into concrete actions
-
+        OnStage.theActorInTheSpotlight().attemptsTo(
+            JoinToday.withJoinButton()
+        );
     }
 
     @Then("^validate label on last step of form$")
