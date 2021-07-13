@@ -15,7 +15,7 @@ Feature: uTest Page
          | <strlastStepLabel>|
    Examples:
          | strfirstName | strlastName | stremail            | strmonthBirth | strdayBirth | stryearBirth | strlanguageSpoken | strcity  | strpostalCode | strcountry    | strcomputerOs | strcomputerVersion | strcomputerLanguage | strmobileBrand | strmobileModel | strmobileOs   | strpassword |  strlastStepLabel |
-         | Pepito       | Peres       | pepito346@gmail.com | February      | 13          | 1976         | Spanish           | Medellin | 050031        | Colombia      | Windows       | 10                 | Spanish             | Xiaomi         | Mi 4           | Android 4.4.4 | pepito456   |  Welcome to the world´s largest |
+         | Pepito       | Peres       | pepito346@gmail.com | February      | 13          | 1976         | Spanish           | Medellin | 050031        | Colombia      | Windows       | 10                 | Spanish             | Xiaomi         | Mi 4           | Android 4.4.4 | Pepito456*  |  The last step |
 
 
 

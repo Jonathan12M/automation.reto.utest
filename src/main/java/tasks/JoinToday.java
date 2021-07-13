@@ -16,6 +16,7 @@ public class JoinToday implements Task {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
+
         actor.attemptsTo(Click.on(JOIN_TODAY_BUTTON));
     }
 }
